@@ -1,0 +1,5 @@
+1. 提前在自己的mysql数据库里创建名为：spider的数据库
+2.将spider.py和app.py中所有创建mysql连接的代码中的user，passwd改为自己数据库的用户名和密码即可
+conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='B19041923',db='spider',charset='utf8')中的user，passwd改为自己数据库的
+3. 运行spider.py进行爬取数据
+4. 爬取数据到myql中后，运行app.py，点击运行后的连接+端口号，查看数据可视化！
